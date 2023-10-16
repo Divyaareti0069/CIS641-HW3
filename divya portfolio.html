@@ -1,438 +1,520 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Divya Portfolio</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        background-color: black;
-        color: #fff;
-        background-image: url("C:/Users/divya/Downloads/divya portfolio/divya portfolio/back_purple.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;
-        margin: 0;
-        padding: 0;
-      }
-      .container {
-        /* max-width: 800px; */
-        width: 50%;
-        margin: 30px 0px 10px 50px;
-        padding: 20px;
-        background-color:transparent;
-        box-shadow: 0 0 10px rgba(0, 18, 58, 255);
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-        width: 50%;
-      }
-      .image-container img {
-        margin-top: 40px;
-        margin-right: 5px;
-        float: right;
-        width: 50%;
-        height: 400px;
-        border-radius: 6px;
-        box-shadow: 0 0 10px #223b7d;
-      }
-      h1 {
-        font-size: 40px;
-      }
-      h2 {
-        font-size: 24px;
-        color: #b6b3b3;
-      }
-      p {
-        font-size: 16px;
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Divya Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: black;
+      color: #fff;
+      background-image: url("C:/Users/divya/Downloads/divya portfolio/divya portfolio/back_purple.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      /* max-width: 800px; */
+      width: 50%;
+      margin: 30px 0px 10px 50px;
+      padding: 20px;
+      background-color: transparent;
+      box-shadow: 0 0 10px rgba(0, 18, 58, 255);
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+      width: 50%;
+    }
+
+    .image-container img {
+      margin-top: 40px;
+      margin-right: 5px;
+      float: right;
+      width: 40%;
+      height: 400px;
+      border-radius: 6px;
+      box-shadow: 0 0 10px #223b7d;
+    }
+
+    h1 {
+      font-size: 40px;
+    }
+
+    h2 {
+      font-size: 24px;
+      color: #b6b3b3;
+    }
+
+    p {
+      font-size: 16px;
+    }
+
+    button:hover {
+      color: #fff;
+      border: 1px solid #635985;
+    }
+
+    .button-other {
+      background-color: #18122b;
+      color: #fff;
+      border: 1px solid #635985;
+      box-shadow: 0 0 10px rgba(0, 18, 58, 255);
+      opacity: 0.8;
+    }
+
+    .button-other:hover {
+      background-color: #18122b;
+      color: #fff;
+      border: 1px solid #635985;
+      box-shadow: 0 0 10px rgba(0, 18, 58, 255);
+      opacity: 1;
+      transform: translateY(10px);
+    }
+
+    header {
+      background-color: #211d4f;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    button {
+      /* background-color: #18122b; */
+      background-color: #1e235a;
+      color: #dbdbdb;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      margin-right: 10px;
+    }
+
+    nav {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+    }
+
+    #interests {
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      border: #00123a;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    #interests h1 {
+      color: white;
+      width: 100%;
+    }
+
+    .interest-card {
+      border: 1px solid #322459;
+      box-shadow: 10px 0 0px #223b7d;
+      box-shadow: 0 0 10px rgba(0, 18, 58, 255);
+      border-radius: 5px;
+      margin: 10px;
+      padding: 20px;
+      display: inline-block;
+      width: 30%;
+      opacity: 0.8;
+    }
+
+    .interest-card1 {
+      border: 1px solid #322459;
+      box-shadow: 0 0 10px #223b7d;
+      border-radius: 5px;
+      margin: 10px;
+      padding: 20px;
+      display: inline-block;
+      width: 30%;
+      opacity: 0.8;
+    }
+
+    .interest-card1 img {
+      max-width: 100%;
+    }
+
+    .interest-card1:hover {
+      transform: scale(1.05);
+      background-color: #01123d;
+      opacity: 1;
+    }
+
+    .interest-card img {
+      max-width: 100%;
+    }
+
+    .interest-card:hover {
+      transform: scale(1.05);
+      opacity: 1;
+    }
+
+    #termProject {
+      padding: 20px;
+      border-radius: 10px;
+      border-color: #b6b3b3;
+      text-align: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      overflow: hidden;
+      margin-bottom: 100px;
+    }
+
+    #termProject h1 {
+      color: white;
+      width: 100%;
+      white-space: nowrap;
+    }
+
+    .project {
+      border: transparent;
+      box-shadow: 0 0 10px #222051;
+      border-radius: 5px;
+      margin: 10px;
+      padding: 20px;
+      width: 100%;
+    }
+
+    .project img {
+      /* float: left; */
+      width: 60%;
+      border-radius: 10px;
+      padding: 10px;
+    }
+
+    .project h3 {
+      font-size: 1.5rem;
+    }
+
+    .project p {
+      margin-bottom: 10px;
+      text-align: justify;
+      padding: 5px;
+    }
+
+    .project a {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #01123d;
+      border: 1px solid #635985;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s, transform 0.2s, opacity 0.3s;
+    }
+
+    .project a:hover {
+      border: 1px solid #635985;
+      transform: translateY(10px);
+      opacity: 0.8;
+    }
+
+    @keyframes typing {
+      from {
+        width: 0;
       }
 
-      button:hover {
-        color: #fff;
-        border: 1px solid #635985;
-      }
-      .button-other {
-        background-color: #382b63;
-        color: #fff;
-        border: 1px solid #635985;
-        box-shadow: 0 0 10px rgba(0, 18, 58, 255);
-        opacity: 0.8;
-      }
-      .button-other:hover {
-        background-color: #382b63;
-        color: #fff;
-        border: 1px solid #635985;
-        box-shadow: 0 0 10px rgba(0, 18, 58, 255);
-        opacity: 1;
-        transform: translateY(10px);
-      }
-      
-      header {
-        background-color: #211d4f;
-        color: #fff;
-        padding: 20px;
-        text-align: center;
-      }
-
-      button {
-        /* background-color: #18122b; */
-        background-color: #1e235a;
-        color: #dbdbdb;
-        border: none;
-        padding: 10px 20px;
-        border-radius: 5px;
-        cursor: pointer;
-        font-size: 16px;
-        margin-right: 10px;
-      }
-
-      nav {
-        background-color: #333;
-        color: #fff;
-        text-align: center;
-        padding: 10px;
-      }
-
-      #interests {
-        padding: 20px;
-        border-radius: 10px;
-        text-align: center;
-        border: #00123a;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-      }
-
-      #interests h1 {
-        color: white;
+      to {
         width: 100%;
       }
+    }
 
-      .interest-card {
-        border: 1px solid #322459;
-        box-shadow: 10px 0 0px #223b7d;
-        box-shadow: 0 0 10px rgba(0, 18, 58, 255);
-        border-radius: 5px;
-        margin: 10px;
-        padding: 20px;
-        display: inline-block;
-        width: 30%;
-        opacity: 0.8;
-      }
-      .interest-card1 {
-        border: 1px solid #322459;
-        box-shadow: 0 0 10px #223b7d;
-        border-radius: 5px;
-        margin: 10px;
-        padding: 20px;
-        display: inline-block;
-        width: 30%;
-        opacity: 0.8;
-      }
-      .interest-card1 img {
-        max-width: 100%;
-      }
-      .interest-card1:hover {
-        transform: scale(1.05);
-        background-color: #01123d;
-        opacity: 1;
+    @keyframes blink-caret {
+
+      from,
+      to {
+        border-right-color: transparent;
       }
 
-      .interest-card img {
-        max-width: 100%;
+      50% {
+        border-right-color: #333;
       }
-      .interest-card:hover {
-        transform: scale(1.05);
-        opacity: 1;
-      }
+    }
 
-      #termProject {
-        padding: 20px;
-        border-radius: 10px;
-        border-color: #b6b3b3;
-        text-align: center;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        overflow: hidden;
-        margin-bottom: 100px;
-      }
+    .hr {
+      width: 90%;
+      border-color: #191a4a;
+    }
 
-      #termProject h1 {
-        color: white;
-        width: 100%;
-        white-space: nowrap;
-      }
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      padding: 10px;
+      background-color: #1e235a;
+      border: #4f306b;
+      box-shadow: 0 0 10px rgba(0, 18, 58, 255);
+      /* height: 7vh; */
+      z-index: 99;
+    }
 
-      .project {
-        border: transparent;
-        box-shadow: 0 0 10px #222051;
-        border-radius: 5px;
-        margin: 10px;
-        padding: 20px;
-        width: 100%;
-      }
-      .project img {
-        float: left;
-        max-width: 100%;
-        border-radius: 6px;
-      }
+    .header a {
+      color: #dbdbdb;
+      /* background-color: #18122b; */
+      background-color: #1e235a;
+      text-decoration: none;
+      font-size: 24px;
+      border-radius: 50%;
+      padding: 10px;
+      border: 1px solid white;
+    }
 
-      .project h3 {
-        font-size: 1.5rem;
-      }
+    .header a:hover {
+      color: #fff;
+    }
 
-      .project p {
-        margin-bottom: 10px;
-        text-align: center;
-      }
+    #contact {
+      padding: 20px 0px;
+      border-radius: 10px;
+      height: 250px;
+      text-align: center;
+      width: 100%;
+      font-size: 20px;
+    }
 
-      .project a {
-        display: inline-block;
-        padding: 10px 20px;
-        background-color: #01123d;
-        border: 1px solid #635985;
-        color: #fff;
-        text-decoration: none;
-        border-radius: 5px;
-        transition: background-color 0.3s, transform 0.2s, opacity 0.3s;
-      }
+    #contact h2 {
+      color: #dbdbdb;
+    }
 
-      .project a:hover {
-        border: 1px solid #635985;
-        transform: translateY(10px);
-        opacity: 0.8;
-      }
-      @keyframes typing {
-        from {
-          width: 0;
-        }
-        to {
-          width: 100%;
-        }
-      }
+    .social-icons {
+      margin: 20px 380px;
+      display: flex;
+      flex-direction: row;
+      font-size: 24px;
+    }
 
-      @keyframes blink-caret {
-        from,
-        to {
-          border-right-color: transparent;
-        }
-        50% {
-          border-right-color: #333;
-        }
-      }
-      .hr {
-        width: 90%;
-        border-color: #191a4a;
-      }
-      .header {
-        position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            padding: 10px;
-        background-color: #1e235a;
-        border: #4f306b;
-        box-shadow: 0 0 10px rgba(0, 18, 58, 255);
-        /* height: 7vh; */
-        z-index: 99;
-      }
-      .header a {
-        color: #dbdbdb;
-        /* background-color: #18122b; */
-        background-color: #1e235a;
-        text-decoration: none;
-        font-size: 24px;
-      }
-      .header a:hover {
-        color: #fff;
-      }
-      #contact {
-        padding: 20px 0px;
-        border-radius: 10px;
-        height: 250px;
-        text-align: center;
-        width: 100%;
-        font-size: 20px;
-      }
+    .social-icons i {
+      border-radius: 50%;
+      border: 2px solid white;
+      padding: 10px;
+      size: 20px;
+    }
 
-      #contact h2 {
-        color: #dbdbdb;
-      }
+    .social-icons span {
+      margin: 20px 0px;
+      display: flex;
+      flex-direction: row;
+      font-size: 24px;
+    }
 
-      .social-icons {
-        margin: 20px 420px;
-        display: flex;
-        flex-direction: row;
-        font-size: 24px;
-      }
-      .social-icons i {
-        border-radius: 50%;
-        border: 2px solid white;
-        padding: 10px;
-        size: 30px;
-      }
-      .social-icons span {
-        margin: 20px 0px;
-        display: flex;
-        flex-direction: row;
-        font-size: 24px;
-      }
+    .social-icons a {
+      text-decoration: none;
+      font-size: 24px;
+      margin: 0 20px;
+      color: #dbdbdb;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      transition: color 0.3s ease;
+    }
 
-      .social-icons a {
-        text-decoration: none;
-        font-size: 24px;
-        margin: 0 20px;
-        color: #dbdbdb;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        transition: color 0.3s ease;
-      }
+    .social-icons a:hover {
+      color: #0077b5;
+      border-radius: 50%;
+    }
 
-      .social-icons a:hover {
-        color: #0077b5;
-        border-radius: 50%;
-      }
+    #technical-interests {
+      background-color: transparent;
+      padding: 10px;
+      border-radius: 10px;
+      text-align: center;
+      margin-top: 20px;
+      height: 200px;
+    }
 
-      
-    </style>
-  </head>
-  <body>
-    <header class="header">
-      <a href="mailto:divyaareti123@gmail.com"> D</a>
-      <button onclick="scrollToInterests()" style="margin: 20px 0px 0px 600px">
-        Personal Interests
-      </button>
-      <button onclick="scrollToTermProject()" style="margin: 0px 0px 0px 10px">
-        Term Project
-      </button>
+    #technical-interests h2 {
+      color: #dbdbdb;
+    }
 
-      <!-- <a
+    /* List of Technical Interests */
+    .technical-list {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      /* Display list items in a row */
+      justify-content: center;
+      /* Center items horizontally */
+    }
+
+    .technical-list li {
+      font-size: 18px;
+      margin: 0 10px;
+      /* display: flex; */
+      display: inline-block;
+      align-items: center;
+      padding: 30px
+    }
+
+    .technical-list li i {
+      font-size: 18px;
+      margin-right: 10px;
+      border-radius: 50%;
+      border: 2px solid white;
+      padding: 10px
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <a href="mailto:divyaareti123@gmail.com"> D</a>
+    <button onclick="scrollToTechnicalInterests()" style="margin: 20px 0px 0px 400px">
+      Technical Interests
+    </button>
+    <button onclick="scrollToInterests()" style="margin: 0px 0px 0px 10px">
+      Personal Interests
+    </button>
+    <button onclick="scrollToTermProject()" style="margin: 0px 0px 0px 10px">
+      Term Project
+    </button>
+
+    <!-- <a
         href="https://www.linkedin.com/in/divya-areti-55031b147/"
         target="_blank"
         ><button style="margin: 0px 0px 0px 10px">Linked In</button></a
       > -->
- 
 
-      <button onclick="scrollToContact()" style="margin: 0px 0px 0px 10px">Contact Me</button>
-    </header>
-    <div style="height: 70px;"></div>
-    <div class="image-container">
-      <img
-        src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExcjI0em1mNTlnbG5qNHl2emd3dnFlNGI2NjYzODN5MjhzbXg0NHhhcCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/L1R1tvI9svkIWwpVYr/giphy.gif"
-      />
-    </div>
-    <div class="container">
-      <section>
-        <p style="color: #cbcbcb; text-align: justify">Hello, I'm</p>
-        <h1>Divya Areti</h1>
-        <h2>Pega System Analyst and Full Stack Developer</h2>
-        <br />
-        <p style="color: #cbcbcb; text-align: justify">
-          I am a Pega System Analyst and Full Stack Developer with over 2 years
-          of experience in the IT industry. <br /><br />
-          I have a strong understanding of Pega Systems Platform and have used
-          it to develop and implement a variety of complex business
-          solutions.<br /><br />
-          In my previous role as a Pega System Analyst, I was responsible for
-          working with clients to understand their business needs and develop
-          Pega solutions to meet those needs.<br /><br />
-          I am a full-stack developer with a passion for building web
-          applications. I have a strong foundation in the fundamentals of
-          programming, including HTML, CSS, Java. I am also familiar with a
-          variety of web development frameworks, such as Spring Boot.<br />
-        </p>
-      </section>
+
+    <button onclick="scrollToContact()" style="margin: 0px 0px 0px 10px">Contact Me</button>
+  </header>
+  <div style="height: 70px;"></div>
+  <div class="image-container">
+    <img
+      src="https://media.tenor.com/8tr_CU6730MAAAAC/web-dev-website-development.gif" />
+  </div>
+  <div class="container">
+    <section>
+      <p style="color: #cbcbcb; text-align: justify">Hello, I'm</p>
+      <h1>Divya Areti<span class="wave">👋</span></h1>
+      <h2>Pega System Analyst and Full Stack Developer</h2>
       <br />
-      <div>
-        <a
-          href="https://github.com/DivyaAreti0069/CIS641-HW2-Areti"
-          target="_blank"
-          ><button class="button button-other">Check out my GitHub!</button></a
-        >
-      </div>
+      <p style="color: #cbcbcb; text-align: justify">
+        I am a Pega System Analyst and Full Stack Developer with over 2 years
+        of experience in the IT industry. <br /><br />
+        I have a strong understanding of Pega Systems Platform and have used
+        it to develop and implement a variety of complex business
+        solutions.<br /><br />
+        In my previous role as a Pega System Analyst, I was responsible for
+        working with clients to understand their business needs and develop
+        Pega solutions to meet those needs.<br /><br />
+        I am a full-stack developer with a passion for building web
+        applications. I have a strong foundation in the fundamentals of
+        programming, including HTML, CSS, Java. I am also familiar with a
+        variety of web development frameworks, such as Spring Boot.<br />
+      </p>
+    </section>
+    <br />
+    <div>
+      <a href="https://github.com/Divyaareti0069/CIS641-HW3" target="_blank"><button
+          class="button button-other">Check out my GitHub!</button></a>
     </div>
+  </div>
+  <section id="technical-interests">
+    <h2>Technical Interests</h2>
+    <ul class="technical-list">
+      <li><i class="fab fa-java"></i> Java Programming</li>
+      <li><i class="fas fa-code"></i> Pega</li>
+      <li><i class="fas fa-cloud"></i> Spring Boot</li>
+      <li><i class="fab fa-html5"></i> HTML</li>
+      <li><i class="fab fa-css3"></i> CSS</li>
+    </ul>
+    </section>
+  <div style="height: 100px;"></div>
+  <section id="termProject">
     <div style="height: 100px;"></div>
-    <section id="termProject">
-      <div style="height: 100px;"></div>
-      <h1>Projects</h1>
-      <div class="project">
-        <img src="https://media.istockphoto.com/id/1164538944/vector/woman-with-laptop-studying-or-working-concept-table-with-books-lamp-coffee-cup-vector.jpg?s=612x612&w=0&k=20&c=VhUj_AZoUnilUKdRessjsK6JQUjXCfum7RQyuzOr6_0=" alt="Project" />
-        <h3>Project 1</h3>
-        <p>Description of Project 1.</p>
-        <a href="project1.html">Learn More</a>
-      </div>
-    </section>
-    <section id="interests">
-      <br/><br/><br/>
-      <h1>Interests</h1>
-      <div class="interest-card1">
-        <img src="C:\Users\divya\Downloads\divya portfolio\divya portfolio\hiking.jpg" alt="Hiking" />
-        <h3>Hiking</h3>
-        <p>Exploring the great outdoors and taking in the beauty of nature.</p>
-      </div>
-      <div class="interest-card1">
-        <img src="C:\Users\divya\Downloads\divya portfolio\divya portfolio\reading.jpg" alt="Reading" />
-        <h3>Reading</h3>
-        <p>Losing myself in a good book is my favorite pastime.</p>
-      </div>
-      <div class="interest-card1">
-        <img
-          src="C:\Users\divya\Downloads\divya portfolio\divya portfolio\badminton.jpg"
-          alt="Playing Badminton"
-          style="width: 130%; height: 60%"
-        />
-        <h3>Playing Badminton</h3>
-        <p>
-          Enjoying the fast-paced and energetic sport of badminton with friends
-          and family.
-        </p>
-      </div>
-      <div class="interest-card">
-        <img src="C:\Users\divya\Downloads\divya portfolio\divya portfolio\cooking.jpg" alt="Cooking" />
-        <h3>Cooking</h3>
-        <p>
-          Exploring the art of culinary delights and creating delicious dishes
-          in my kitchen.
-        </p>
-      </div>
-    </section>
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <p>Feel free to reach out through the following platforms:</p>
-      <div class="social-icons">
-        <a
-          href="https://www.linkedin.com/in/divya-areti-55031b147/"
-          target="_blank"
-        >
-          <i class="fab fa-linkedin"></i> </a
-        ><span>LinkedIn</span>
-        <a href="mailto:your.email@example.com">
-          <i class="far fa-envelope"></i> </a
-        ><span>Mail</span>
-      </div>
-    </section>
-    <hr class="hr" />
-    <footer>
-      <p style="text-align: center;">&copy; 2023 Divya Areti</p>
-    </footer>
-    <script>
-      function scrollToInterests() {
-        const interestsSection = document.getElementById("interests");
-        interestsSection.scrollIntoView({ behavior: "smooth" });
-      }
-      function scrollToTermProject() {
-        const termProjectSection = document.getElementById("termProject");
-        termProjectSection.scrollIntoView({ behavior: "smooth" });
-      }
-      function scrollToContact() {
-        const contactSection = document.getElementById("contact");
-        contactSection.scrollIntoView({ behavior: "smooth" });
-      }
-    </script>
-  </body>
+    <h1>Projects</h1>
+    <div class="project">
+      <img
+        src="https://miro.medium.com/v2/resize:fit:669/1*a294-4dU_pc2n7dowyaTGg.jpeg"
+        alt="Project" />
+      <h3>Online Doctor Appointment</h3>
+      <p>My term project stands out as an excellent example of a thorough effort that used the power of intense software development to address urgent problems in the healthcare system. This project was carefully planned to address the problems and difficulties that hospital administration is currently dealing with. The culmination of this project was the development of a fully functional application that has the potential to completely transform hospital operations, resulting in significant cost savings and raising patient happiness to new heights.
+
+        This initiative demonstrates both my technical competence and my capacity for identifying and addressing pressing problems with the healthcare system. It emphasizes my constant commitment to producing real and significant results.The primary objective of this project was the careful creation of a sophisticated software system that was carefully designed to expedite and optimise hospital administration procedures. It provides a comprehensive solution that includes making appointments, managing patient records, allocating resources, and a host of other features, leading to increased operational effectiveness and improved patient care.In essence, this project went beyond simple technological advancement. It demonstrated a thorough understanding of the complex healthcare field along with the ability to turn that information into workable solutions. It exemplifies my persistent dedication to making a significant impact on the healthcare industry by successfully addressing pressing problems with technology-driven solutions.
+        
+        I really anticipate delving into a thorough discussion of the accomplishments and knowledge gained over this effort. Moreover, I am excited about the possibility of utilizing the information and experience gained from this endeavour to advance my professional development and significantly contribute to the success of our organization, especially when it comes to addressing the pressing issues in the healthcare industry.</p>
+      <a href="https://vamsivura.github.io/GVSU-CIS641-Team-ACS/" target="_blank">Have a look on my project</a>
+    </div>
+  </section>
+  <section id="interests">
+    <br /><br /><br />
+    <h1>Interests</h1>
+    <div class="interest-card1">
+      <img src="./hiking.jpg" alt="Hiking" />
+      <h3>Hiking</h3>
+      <p>Exploring the great outdoors and taking in the beauty of nature.</p>
+    </div>
+    <div class="interest-card1">
+      <img src="./reading.jpg" alt="Reading" />
+      <h3>Reading</h3>
+      <p>Losing myself in a good book is my favorite pastime.</p>
+    </div>
+    <div class="interest-card1">
+      <img src="./badminton.jpg" alt="Playing Badminton"
+        style="width: 130%; height: 60%" />
+      <h3>Playing Badminton</h3>
+      <p>
+        Enjoying the fast-paced and energetic sport of badminton with friends
+        and family.
+      </p>
+    </div>
+    <div class="interest-card">
+      <img src="./cooking.jpg" alt="Cooking" />
+      <h3>Cooking</h3>
+      <p>
+        Exploring the art of culinary delights and creating delicious dishes
+        in my kitchen.
+      </p>
+    </div>
+  </section>
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Feel free to reach out through the following platforms:</p>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/divya-areti-55031b147/" target="_blank">
+        <i class="fab fa-linkedin"></i> </a><span>LinkedIn</span>
+      <a href="mailto:your.email@example.com">
+        <i class="far fa-envelope"></i> </a><span>Mail</span>
+        <a href="https://github.com/DivyaAreti0069/" target="_blank">
+          <i class="fab fa-github"></i> </a
+        ><span>GitHub</span>
+    </div>
+  </section>
+  <hr class="hr" />
+  <footer>
+    <p style="text-align: center;">&copy; 2023 Divya Areti</p>
+  </footer>
+  <script>
+    function scrollToInterests() {
+      const interestsSection = document.getElementById("interests");
+      interestsSection.scrollIntoView({ behavior: "smooth" });
+    }
+    function scrollToTermProject() {
+      const termProjectSection = document.getElementById("termProject");
+      termProjectSection.scrollIntoView({ behavior: "smooth" });
+    }
+    function scrollToContact() {
+      const contactSection = document.getElementById("contact");
+      contactSection.scrollIntoView({ behavior: "smooth" });
+    }
+
+    function scrollToTechnicalInterests() {
+      const contactSection = document.getElementById("technical-interests");
+      contactSection.scrollIntoView({ behavior: "smooth" });
+    }
+
+  </script>
+</body>
+
 </html>
